@@ -6,7 +6,7 @@ const ProductPage = async ({ searchParams }:
     const category = (await searchParams).category
     return (
         <div>
-            <ProductList category={category}/>
+            <ProductList category={category} params="products"/>
         </div>
     );
 }

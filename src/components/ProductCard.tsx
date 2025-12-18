@@ -46,7 +46,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
                                 handleProductType({ type: "size", value: e.target.value })
                             }>
                             {product.sizes.map(size => (
-                                <option value={size}>{size.toUpperCase()}</option>
+                                <option key={size} value={size}>{size.toUpperCase()}</option>
                             ))}
                         </select>
                     </div>
