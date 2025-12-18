@@ -71,7 +71,7 @@ const Categories = () => {
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
-  
+
 
     console.log(selectedCategory)
     return (
@@ -85,7 +85,7 @@ const Categories = () => {
                     {category.name}
                 </div>
             ))}
-            Categories
+            
         </div>
     );
 }
